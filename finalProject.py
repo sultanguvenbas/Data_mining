@@ -1,1 +1,1 @@
-print("worasdfasdked")
+print("denemee")
