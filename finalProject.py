@@ -1,8 +1,13 @@
+import math
+
 import pandas as pd
 import numpy as np
+from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 
 # Reading dataset file
+from sklearn.neural_network import MLPRegressor
+
 filename = 'forestfires.csv'
 df = pd.read_csv(filename)
 
@@ -16,5 +21,23 @@ y = data[:, -1]  # area
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
-print(X)
-print(y)
+#print(X)
+#print(y)
+
+def rmse(y_true, y_predict):  # Root mean Square Error
+    retval = mean_squared_error(y_true, y_predict)
+    return math.sqrt(retval)
+
+# Activation alternatives: 'identity', 'logistic', 'tanh', 'relu'
+print('MLPRegressor Model')
+mdl = MLPRegressor(hidden_layer_sizes=(16, 8), max_iter=5000, activation='relu',
+                   learning_rate='constant', learning_rate_init=0.001)
+mdl.fit(X_train, y_train)
+
+# Printing RMSE of training and test dataset for MLP Model
+
+y_predict = mdl.predict(X_train)
+print('Training set rmse: %.3f' % rmse(y_train, y_predict))
+
+y_predict = mdl.predict(X_test)
+print('Test set rmse: %.3f' % rmse(y_test, y_predict))
