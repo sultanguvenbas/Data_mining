@@ -9,6 +9,12 @@ performance of the forest fires prediction models.
 
 Team & Roles:
 
+Ali Akgöl and Sultan Güvenbaş. We both worked in every places such as report and source code e.t.c.
+
 Structure: 
 
+
+
 Language, version, and main file:
+
+We used python language on this project. One of us worked python 3.7 version, the other one worked python 3.9 version. The main file is finalProject.py . 
