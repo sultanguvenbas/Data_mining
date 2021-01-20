@@ -82,15 +82,17 @@ print('Test set rmse: %.3f' % rmse(y_test, y_predict))
 
 def histogram():
 
-    data2 = pd.read_csv(filename)
-    months = data2[data2.columns[2]].values
-    area = data2[data2.columns[-1]].values
-    monthDict = {}
+    data2 = pd.read_csv(filename)  #reading data-set again
+    months = data2[data2.columns[2]].values #taking months from data-set
+    area = data2[data2.columns[-1]].values  #taking area from data-set
 
+    #creating dictionary value and adding items inside of
+    monthDict = {}
     for monthName in range(len(months)):
         if months[monthName] not in monthDict:
             monthDict[months[monthName]] = 0
 
+    #sum up area for every months
     for areaindex in range(len(area)):
         monthDict[months[areaindex]] += area[areaindex]
     #print(monthDict)
@@ -101,6 +103,7 @@ def histogram():
     arr=[]
     arrValue=[]
 
+    #splitting the dictionary as a key and value
     for checkMont in monthArray:
         for keys, values in monthDict.items():
             if checkMont == keys:
@@ -111,6 +114,7 @@ def histogram():
     #print(arr)
     #print(arrValue)
 
+    #drawing the histogram
     plt.xlabel("Months")
     plt.ylabel("Total Burned Area (in ha)")
     plt.title("Histogram")
