@@ -9,7 +9,7 @@ performance of the forest fires prediction models.
 
 Team & Roles:
 
-Ali Akgöl and Sultan Güvenbaş. We both worked in every places such as report and source code e.t.c.
+Ali Akgöl(370709069) and Sultan Güvenbaş(170709055). We both worked in every places such as report and source code e.t.c.
 
 Structure: 
 
