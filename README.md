@@ -22,3 +22,4 @@ We used python language on this project. One of us worked python 3.7 version, th
 Additional:
 
 Report.tex file is in the latex folder
+Also, We would like you to know in our commiting part sultanguvenbas and U170709055 are the same person. We do not know why some commits taking from sultanguvenbas, some commits taking from U170709055. However they are the same person as you can guest. You can check it though the insights -> network part. The same problem occured akglali and U370709069.
