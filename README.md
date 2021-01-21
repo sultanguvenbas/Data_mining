@@ -13,7 +13,7 @@ Ali Akgöl(370709069) and Sultan Güvenbaş(170709055). We both worked in every 
 
 Structure: 
 
-
+You can reach source code which name is finalProject.py and csv file which name is forestfires.csv. 
 
 Language, version, and main file:
 
