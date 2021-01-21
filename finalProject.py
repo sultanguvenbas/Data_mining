@@ -56,7 +56,7 @@ def func(params, xdata, ydata):
 
 # Activation alternatives: 'identity', 'logistic', 'tanh', 'relu'
 print('MLPRegressor Model')
-mdl = MLPRegressor(hidden_layer_sizes=(16, 8, 4), max_iter=5000, activation='relu',
+mdl = MLPRegressor(hidden_layer_sizes=(16, 8), max_iter=5000, activation='relu',
                    learning_rate='constant', learning_rate_init=0.001)
 mdl.fit(X_train, y_train)
 
