@@ -18,3 +18,7 @@ Structure:
 Language, version, and main file:
 
 We used python language on this project. One of us worked python 3.7 version, the other one worked python 3.9 version. The main file is finalProject.py . 
+
+Additional:
+
+Report.tex file is in the latex folder
